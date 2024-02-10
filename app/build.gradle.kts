@@ -50,6 +50,8 @@ android {
     buildToolsVersion = "34.0.0"
 }
 
+val composeGlanceWidgetVersion by extra("1.0.0")
+
 dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
@@ -67,4 +69,8 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    //Glance Widget
+    implementation("androidx.glance:glance-appwidget:$composeGlanceWidgetVersion")
+    implementation("androidx.glance:glance-material:$composeGlanceWidgetVersion")
+    implementation("androidx.glance:glance-material3:$composeGlanceWidgetVersion")
 }
