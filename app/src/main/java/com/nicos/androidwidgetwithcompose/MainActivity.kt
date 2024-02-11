@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                                 requestForPermissionAndStartTheService(permissionLauncher)
                             }) {
                             Text(
-                                text = "Click Here for location permission",
+                                text = getString(R.string.click_here_to_request_for_location_permissions),
                                 textAlign = TextAlign.Center,
                             )
                         }
