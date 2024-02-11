@@ -8,9 +8,9 @@ import androidx.activity.compose.ManagedActivityResultLauncher
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -31,14 +31,16 @@ class MainActivity : ComponentActivity() {
                     val permissionLauncher = rememberLauncherForActivityResult(
                         ActivityResultContracts.RequestMultiplePermissions()
                     ) { _ -> }
-                    Box(contentAlignment = Alignment.Center,
-                        modifier = Modifier.clickable {
-                            requestForPermissionAndStartTheService(permissionLauncher)
-                        }) {
-                        Text(
-                            text = "Widget Test\nClick Here for location permission",
-                            textAlign = TextAlign.Center,
-                        )
+                    Box(contentAlignment = Alignment.Center) {
+                        Button(
+                            onClick = {
+                                requestForPermissionAndStartTheService(permissionLauncher)
+                            }) {
+                            Text(
+                                text = "Click Here for location permission",
+                                textAlign = TextAlign.Center,
+                            )
+                        }
                     }
                 }
             }
