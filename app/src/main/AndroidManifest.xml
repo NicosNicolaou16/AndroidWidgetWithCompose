@@ -30,7 +30,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".glance_widget.receiver.MyAppWidgetReceiver"
+        <receiver
+            android:name=".glance_widget.receiver.MyAppWidgetReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
