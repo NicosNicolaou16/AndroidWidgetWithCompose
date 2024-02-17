@@ -72,6 +72,8 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     //Glance Widget
     implementation("androidx.glance:glance-appwidget:$composeGlanceWidgetVersion")
+    //Using Material 2
     implementation("androidx.glance:glance-material:$composeGlanceWidgetVersion")
+    //Using Material 3
     implementation("androidx.glance:glance-material3:$composeGlanceWidgetVersion")
 }
