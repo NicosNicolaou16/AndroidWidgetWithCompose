@@ -2,7 +2,24 @@
 
 This project is the setup for the Widget in Android with Jetpack Compose (Glance).
 
-# Steps 1 Create the Glance Receiver class that extend GlanceAppWidgetReceiver() and return the Widget Class
+# Step 1 add the follow dependencies libraries
+
+```Kotlin
+val composeGlanceWidgetVersion by extra("1.0.0")
+
+dependencies {
+
+    //...
+    //Glance Widget
+    implementation("androidx.glance:glance-appwidget:$composeGlanceWidgetVersion")
+    //Using Material 2
+    implementation("androidx.glance:glance-material:$composeGlanceWidgetVersion")
+    //Using Material 3
+    implementation("androidx.glance:glance-material3:$composeGlanceWidgetVersion")
+}
+```
+
+# Steps 2 Create the Glance Receiver class that extend GlanceAppWidgetReceiver() and return the Widget Class
 
 ```Kotlin
 class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
@@ -11,7 +28,7 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 }
 ```
 
-# Step 2 Create the xml file into the xml directory (configuration to declare the size etc.)
+# Step 3 Create the xml file into the xml directory (configuration to declare the size etc.)
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -23,7 +40,7 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 </appwidget-provider>
 ```
 
-# Step 3 Register the Receiver Class into the Manifest and set the xml configuration for the Glance Widget
+# Step 4 Register the Receiver Class into the Manifest and set the xml configuration for the Glance Widget
 
 ```XML
 
@@ -36,7 +53,7 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 </receiver>
 ```
 
-# Step 4 Create the Widget that extend GlanceAppWidget() class
+# Step 5 Create the Widget that extend GlanceAppWidget() class
 
 # Reference
 
