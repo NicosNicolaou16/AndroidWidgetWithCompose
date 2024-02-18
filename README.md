@@ -1,6 +1,6 @@
 # Android Widget With Compose
 
-This project is the setup for the Widget in Android with Jetpack Compose (Glance).
+This project is the setup for the Widget in Android with Jetpack Compose Glance.
 
 # Step 1 add the follow dependencies libraries
 
