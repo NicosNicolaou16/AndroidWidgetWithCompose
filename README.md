@@ -2,7 +2,7 @@
 
 This project is the setup for the Widget in Android with Jetpack Compose Glance.
 
-# Step 1 add the follow dependencies libraries
+## Step 1 add the follow dependencies libraries
 
 ```Kotlin
 val composeGlanceWidgetVersion by extra("1.0.0")
@@ -19,7 +19,7 @@ dependencies {
 }
 ```
 
-# Steps 2 Create the Glance Receiver class that extend GlanceAppWidgetReceiver() and return the Widget Class
+## Steps 2 Create the Glance Receiver class that extend GlanceAppWidgetReceiver() and return the Widget Class
 
 ```Kotlin
 class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
@@ -28,7 +28,7 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 }
 ```
 
-# Step 3 Create the xml file into the xml directory (configuration to declare the size etc.)
+## Step 3 Create the xml file into the xml directory (configuration to declare the size etc.)
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -40,7 +40,7 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 </appwidget-provider>
 ```
 
-# Step 4 Register the Receiver Class into the Manifest and set the xml configuration for the Glance Widget
+## Step 4 Register the Receiver Class into the Manifest and set the xml configuration for the Glance Widget
 
 ```XML
 
@@ -53,7 +53,7 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 </receiver>
 ```
 
-# Step 5 Create the Widget that extend GlanceAppWidget() class
+## Step 5 Create the Widget that extend GlanceAppWidget() class
 
 # Reference
 
