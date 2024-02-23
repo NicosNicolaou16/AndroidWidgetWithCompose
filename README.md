@@ -56,6 +56,19 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 
 ## Step 5 Create the Widget that extend GlanceAppWidget() class
 
+```Kotlin
+//...
+class MyAppWidget : GlanceAppWidget() {
+
+    override suspend fun provideGlance(context: Context, id: GlanceId) {
+        provideContent {
+            MyContent(context) //Compose UI
+        }
+    }
+    //....
+}
+```
+
 # Reference
 
 https://developer.android.com/jetpack/compose/glance/create-app-widget  <br />
