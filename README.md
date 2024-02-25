@@ -2,6 +2,10 @@
 
 This project is the setup for the Widget in Android with Jetpack Compose Glance.
 
+## Similar project with (Dart Language)
+
+https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter <br />
+
 ## Step 1 add the follow dependencies libraries
 
 ```Kotlin
@@ -33,10 +37,8 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
-    android:initialLayout="@layout/glance_default_loading_layout"
-    android:minWidth="250dp"
-    android:minHeight="50dp"
-    android:resizeMode="horizontal|vertical"
+    android:initialLayout="@layout/glance_default_loading_layout" android:minWidth="250dp"
+    android:minHeight="50dp" android:resizeMode="horizontal|vertical"
     android:widgetCategory="home_screen">
 </appwidget-provider>
 ```
@@ -68,6 +70,10 @@ class MyAppWidget : GlanceAppWidget() {
     //....
 }
 ```
+
+## Check my article
+
+https://medium.com/@nicosnicolaou/android-widget-setup-with-jetpack-compose-glance-with-a-flutter-example-e07fb63c9466  <br />
 
 # Reference
 
