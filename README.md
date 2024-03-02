@@ -6,6 +6,11 @@ This project is the setup for the Widget in Android with Jetpack Compose Glance.
 
 https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter <br />
 
+Target SDK version: 34 <br />
+Minimum SDK version: 27 <br />
+Kotlin version: 1.9.22 <br />
+Gradle version: 8.3.0 <br />
+
 ## Step 1 add the follow dependencies libraries
 
 ```Kotlin
