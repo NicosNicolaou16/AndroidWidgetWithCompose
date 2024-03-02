@@ -70,7 +70,7 @@ class MyAppWidget : GlanceAppWidget() {
                 )
                 Box {
                     Button(
-                        text = stringResource(R.string.find_the_coordination),
+                        text = context.getString(R.string.find_the_coordination),
                         onClick = {
                             locationProcess(context) { data ->
                                 locationData = data
