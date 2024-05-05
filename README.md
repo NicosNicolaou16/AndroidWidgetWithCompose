@@ -9,7 +9,7 @@ https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter <br 
 Target SDK version: 34 <br />
 Minimum SDK version: 27 <br />
 Kotlin version: 1.9.23 <br />
-Gradle version: 8.3.2 <br />
+Gradle version: 8.4.0 <br />
 
 ## Step 1 add the follow dependencies libraries
 
