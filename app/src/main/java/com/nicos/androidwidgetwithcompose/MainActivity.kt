@@ -1,8 +1,11 @@
 package com.nicos.androidwidgetwithcompose
 
 import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.ManagedActivityResultLauncher
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -16,7 +19,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
+import androidx.core.app.ActivityCompat
 import com.nicos.androidwidgetwithcompose.ui.theme.AndroidWidgetWithComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,9 +33,26 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    val context = LocalContext.current
+                    val permissionBackgroundLocationLauncher = rememberLauncherForActivityResult(
+                        ActivityResultContracts.RequestPermission()
+                    ) { isGrande -> }
                     val permissionLauncher = rememberLauncherForActivityResult(
                         ActivityResultContracts.RequestMultiplePermissions()
-                    ) { _ -> }
+                    ) { permissionList ->
+                        permissionList.forEach { (permission, isGrande) ->
+                            if (ActivityCompat.checkSelfPermission(
+                                    context, Manifest.permission.ACCESS_COARSE_LOCATION
+                                ) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                                    context, Manifest.permission.ACCESS_FINE_LOCATION
+                                ) == PackageManager.PERMISSION_GRANTED
+                            ) {
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                                    permissionBackgroundLocationLauncher.launch(Manifest.permission.ACCESS_BACKGROUND_LOCATION)
+                                }
+                            }
+                        }
+                    }
                     Box(contentAlignment = Alignment.Center) {
                         Button(
                             onClick = {
@@ -54,7 +76,6 @@ private fun requestForPermissionAndStartTheService(permissionLauncher: ManagedAc
             arrayOf(
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.ACCESS_FINE_LOCATION,
-                Manifest.permission.ACCESS_BACKGROUND_LOCATION,
             )
         )
     } else {
