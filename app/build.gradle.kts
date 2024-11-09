@@ -1,18 +1,18 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.compose") version "2.0.20"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
 }
 
 android {
     namespace = "com.nicos.androidwidgetwithcompose"
-    buildToolsVersion = "34.0.0"
-    compileSdk = 34
+    buildToolsVersion = "35.0.0"
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.nicos.androidwidgetwithcompose"
-        minSdk = 27
-        targetSdk = 34
+        minSdk = 28
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
