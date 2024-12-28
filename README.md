@@ -2,6 +2,8 @@
 
 This project sets up the Widget in Android using Jetpack Compose Glance.
 
+# Setup
+
 ## Step 1 add the follow dependencies libraries
 
 ```Kotlin
