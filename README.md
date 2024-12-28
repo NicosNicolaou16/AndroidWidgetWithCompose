@@ -81,6 +81,6 @@ Minimum SDK version: 28 <br />
 Kotlin version: 2.0.21 <br />
 Gradle version: 8.8.2 <br />
 
-# Reference
+# References
 
 https://developer.android.com/jetpack/compose/glance/create-app-widget  <br />
