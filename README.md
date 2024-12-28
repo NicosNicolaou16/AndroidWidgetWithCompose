@@ -2,10 +2,6 @@
 
 This project sets up the Widget in Android using Jetpack Compose Glance.
 
-## Similar project with (Dart Language)
-
-https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter <br />
-
 Target SDK version: 35 <br />
 Minimum SDK version: 28 <br />
 Kotlin version: 2.0.21 <br />
@@ -44,7 +40,8 @@ class MyAppWidgetReceiver : GlanceAppWidgetReceiver() {
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
     android:initialLayout="@layout/glance_default_loading_layout" android:minWidth="250dp"
     android:minHeight="50dp" android:resizeMode="horizontal|vertical"
-    android:widgetCategory="home_screen"></appwidget-provider>
+    android:widgetCategory="home_screen">
+</appwidget-provider>
 ```
 
 ## Step 4 Register the Receiver Class into the Manifest and set the xml configuration for the Glance Widget
@@ -79,10 +76,6 @@ class MyAppWidget : GlanceAppWidget() {
 
 > [!IMPORTANT]
 > Similar project with (Dart Language) :point_right: [Android_Widget_With_Compose_With_Flutter](https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter) :point_left: <br />
-
-## Check my article
-
-https://medium.com/@nicosnicolaou/android-widget-setup-with-jetpack-compose-glance-with-a-flutter-example-e07fb63c9466  <br />
 
 # Reference
 
