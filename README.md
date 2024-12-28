@@ -74,6 +74,11 @@ class MyAppWidget : GlanceAppWidget() {
     //....
 }
 ```
+> [!IMPORTANT]  
+> Check my article for the setup :point_right: [Android Widget Setup with Jetpack Compose Glance (with a Flutter example) - Medium](https://medium.com/@nicosnicolaou/android-widget-setup-with-jetpack-compose-glance-with-a-flutter-example-e07fb63c9466) :point_left: <br />
+
+> [!IMPORTANT]
+> Similar project with (Dart Language) :point_right: [Android_Widget_With_Compose_With_Flutter](https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter) :point_left: <br />
 
 ## Check my article
 
