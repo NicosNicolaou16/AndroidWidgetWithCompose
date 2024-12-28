@@ -2,11 +2,6 @@
 
 This project sets up the Widget in Android using Jetpack Compose Glance.
 
-Target SDK version: 35 <br />
-Minimum SDK version: 28 <br />
-Kotlin version: 2.0.21 <br />
-Gradle version: 8.8.2 <br />
-
 ## Step 1 add the follow dependencies libraries
 
 ```Kotlin
@@ -76,6 +71,13 @@ class MyAppWidget : GlanceAppWidget() {
 
 > [!IMPORTANT]
 > Similar project with (Dart Language) :point_right: [Android_Widget_With_Compose_With_Flutter](https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter) :point_left: <br />
+
+# Versioning
+
+Target SDK version: 35 <br />
+Minimum SDK version: 28 <br />
+Kotlin version: 2.0.21 <br />
+Gradle version: 8.8.2 <br />
 
 # Reference
 
