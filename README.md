@@ -20,14 +20,14 @@ A modern Android Widget implementation using **Jetpack Compose Glance**. This pr
 > [!IMPORTANT]
 > Similar project with (Dart Language) :point_right: [Android_Widget_With_Compose_With_Flutter](https://github.com/NicosNicolaou16/Android_Widget_With_Compose_With_Flutter) :point_left: <br />
 
-### ✨ Features
+## ✨ Features
 
 *   **Glance Framework:** Leverages `androidx.glance` for building app widgets with Compose-like syntax.
 *   **Material 3 Support:** Fully compatible with the latest Material Design systems for widgets.
 *   **Edge-to-Edge Optimized:** Configured for the latest Android standards (Target SDK 36).
 *   **Clean Architecture:** Demonstrates a clear separation between the Widget Receiver and the UI Content.
 
-### 🛠️ Setup
+## 🛠️ Setup
 
 ## Step 1 add the follow dependencies libraries
 
