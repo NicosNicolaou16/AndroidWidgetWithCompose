@@ -98,8 +98,8 @@ class MyAppWidget : GlanceAppWidget() {
 
 - **Target SDK:** **36**
 - **Minimum SDK:** **29**
-- **Kotlin Version:** **2.2.20**
-- **Gradle Version:** **8.13.0**
+- **Kotlin Version:** **2.3.10**
+- **Gradle Version:** **9.1.0**
 
 ## 📚 APIs & References
 
